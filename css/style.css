@@ -1,0 +1,266 @@
+/* Inspired by Gregory Gundersen's blog theme (gregorygundersen.com) */
+
+html {
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5em;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  line-height: 1.2em;
+}
+
+.wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mono {
+  font-family: monospace;
+}
+
+/* Navigation */
+
+.nav {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.nav a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 12px;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.site-title {
+  margin: 0 0 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  text-decoration: underline;
+}
+
+/* Blog index & research listing */
+
+#blog {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+#blog #intro {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.4em;
+  margin-bottom: 40px;
+}
+
+#blog .post-date {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#blog .post-title {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#blog .post-title a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#blog .post-title a:hover {
+  text-decoration: underline;
+}
+
+#blog .post-subtitle {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  line-height: 1.5em;
+}
+
+#blog .year {
+  font-size: 18px;
+  position: relative;
+  right: 100px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 100px;
+  margin-bottom: -24px;
+}
+
+#blog .year:first-of-type {
+  margin-top: 0;
+}
+
+/* Article pages */
+
+.article {
+  font-size: 15px;
+  line-height: 1.6em;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.article h1 {
+  font-size: 26px;
+  margin-bottom: 0.25rem;
+}
+
+.article .post-date {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.article h2 {
+  font-size: 26px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+  padding-top: 1em;
+  margin-top: 0;
+}
+
+.article h2:first-of-type {
+  padding-top: 0;
+}
+
+.article blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: #777;
+  border-left: 0.25em solid #ddd;
+}
+
+.article ul {
+  padding: 0 15px;
+}
+
+.article hr {
+  border-bottom: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+  margin: 33px auto;
+  width: 70px;
+}
+
+.article .back-link {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 3rem;
+}
+
+.article .back-link a:hover {
+  text-decoration: underline;
+}
+
+/* About & static pages */
+
+.page {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+.page h1 {
+  font-size: 26px;
+  margin-bottom: 1.5rem;
+}
+
+.page h2 {
+  font-size: 26px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+  padding-top: 1em;
+  margin-top: 2rem;
+}
+
+.page ul {
+  padding: 0 15px;
+}
+
+.page .muted {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+}
+
+code {
+  font-family: monospace;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0 7px;
+  }
+
+  #blog .year {
+    position: static;
+    width: auto;
+    margin-bottom: 10px;
+  }
+}

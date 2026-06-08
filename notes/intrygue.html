@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Induction-aware entropy gating — Sasha Kuleshova</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <p class="site-title"><a href="../index.html">Sasha Kuleshova</a></p>
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../research.html">Research</a></li>
+      </ul>
+    </nav>
+
+    <article class="article">
+      <h1>Induction-aware entropy gating</h1>
+      <p class="post-date">June 2026</p>
+
+      <p>Semantic entropy is a strong black-box signal for hallucination detection: sample multiple completions, cluster by meaning, and measure disagreement. But in RAG settings, the signal gets noisy when the model leans on parametric knowledge instead of retrieved context.</p>
+
+      <h2>The idea</h2>
+      <p>Attention sinks — tokens that consistently attract disproportionate attention — correlate with certain failure modes. INTRYGUE gates entropy estimates using sink-rate dynamics, down-weighting uncertainty scores when the model appears to be in an "induction-heavy" regime that's prone to confabulation.</p>
+
+      <h2>Open questions</h2>
+      <ul>
+        <li>How stable is sink-rate across model families and scales?</li>
+        <li>Does gating help on out-of-distribution retrieval, or only in-domain?</li>
+        <li>What's the latency overhead at inference time?</li>
+      </ul>
+
+      <p class="back-link"><a href="../research.html">← All research notes</a></p>
+    </article>
+  </div>
+</body>
+</html>

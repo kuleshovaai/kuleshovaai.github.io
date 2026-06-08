@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sink rate as an uncertainty signal — Sasha Kuleshova</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <p class="site-title"><a href="../index.html">Sasha Kuleshova</a></p>
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../research.html">Research</a></li>
+      </ul>
+    </nav>
+
+    <article class="article">
+      <h1>Sink rate as an uncertainty signal</h1>
+      <p class="post-date">April 2026</p>
+
+      <p>Sink rate measures how quickly attention concentrates on sink tokens during generation. The hypothesis: when sinks activate strongly early, the model may be relying on shallow pattern-matching rather than careful reasoning.</p>
+
+      <h2>Preliminary results</h2>
+      <p>On TriviaQA, sink rate alone achieves modest AUC for hallucination detection — not competitive with semantic entropy, but cheap to compute and complementary in an ensemble.</p>
+
+      <h2>Mechanistic angle</h2>
+      <p>We're correlating sink dynamics with induction head activity. Early results suggest the signal is partly length-dependent, which needs normalization before it's useful in production.</p>
+
+      <p class="back-link"><a href="../research.html">← All research notes</a></p>
+    </article>
+  </div>
+</body>
+</html>

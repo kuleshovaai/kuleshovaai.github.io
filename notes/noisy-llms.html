@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noisy LLMs and hallucination detection — Sasha Kuleshova</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <p class="site-title"><a href="../index.html">Sasha Kuleshova</a></p>
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../research.html">Research</a></li>
+      </ul>
+    </nav>
+
+    <article class="article">
+      <h1>Noisy LLMs and hallucination detection</h1>
+      <p class="post-date">May 2026</p>
+
+      <p>We've been building a unified framework to compare hallucination detection methods side by side: semantic entropy, perplexity, max-token probability, calibrated entropy, sink rate, and several white-box approaches.</p>
+
+      <h2>What we've learned so far</h2>
+      <ul>
+        <li>No single method wins everywhere — dataset and model matter a lot.</li>
+        <li>White-box signals are informative but expensive; good ensembles often beat any one approach.</li>
+        <li>Annotation quality is the hidden variable in every benchmark.</li>
+      </ul>
+
+      <h2>Next steps</h2>
+      <p>Run the full battery on TriviaQA and CoQA with smaller open models (Qwen3-0.6B, Llama-2-7B) and publish reproducible configs.</p>
+
+      <p class="back-link"><a href="../research.html">← All research notes</a></p>
+    </article>
+  </div>
+</body>
+</html>
